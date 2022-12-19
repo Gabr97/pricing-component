@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "plan": "basic",
+            "price": {
+                "monthly": 29.90,
+                "anually": 290.90
+            },
+            "features": "All features in Standard",
+            "components": "Maximum of 600 components",
+            "tools": true
+        },
+        {
+            "plan": "professional",
+            "price": {
+                "monthly": 49.90,
+                "anually": 490.90
+            },
+            "features": "All features in Standard",
+            "components": "Maximum of 1000 components",
+            "tools": true
+        },
+        {
+            "plan": "startup",
+            "price": {
+                "monthly": 99.90,
+                "anually": 990.90
+            },
+            "features": "All features in Standard",
+            "components": "Over 4000 components",
+            "tools": true
+        }
+    ]
+}

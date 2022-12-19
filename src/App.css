@@ -1,0 +1,241 @@
+.card {
+  background-color: #fff;
+  height: 450px;
+  max-width: 500px;
+  min-width: 350px;
+  margin: 5px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  ;
+}
+
+.card-body {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  color: #c6cad3;
+  font-weight: bold;
+}
+
+.plan-title {
+  font-size: 13px;
+  color: #23283A !important;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.price {
+  padding: 20px 0;
+}
+
+.price b {
+  font-size: 3em;
+  font-weight: bold;
+  color: #1E2338;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.pricing-container .pro {
+  height: 500px;
+  background: #1E2338;
+  color: #fff !important;
+}
+
+.pro .plan-title {
+  color: #717EF0 !important;
+}
+
+.pro span {
+  color: #fff !important;
+}
+
+.pro .price b {
+  color: #fff !important;
+}
+
+.main-container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.switch-plan {
+  padding-right: 100px;
+
+}
+
+.switch-plan p {
+  color: #bfbfc0;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.line::after {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #b9bac038;
+  margin-bottom: 40px;
+}
+
+ul li::before {
+
+  font-family: 'Material Symbols Outlined';
+  content: '\E876';
+  font-size: 20px;
+  color: #59CE9F;
+  padding-right: 10px;
+}
+
+.pro .get-started {
+  background-color: #717EF0;
+  color: #fff;
+}
+
+.get-started {
+  background: #1E2338;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+/* switch btn */
+.onoffswitch {
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+  content: "Anually";
+  padding-left: 10px;
+  background-color: #6a76a3;
+  color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+  content: "Monthly";
+  padding-right: 10px;
+  background-color: #868ed8;
+  color: #e9e9e9;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 6px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+@media(max-width:1280px) {
+
+.pricing-container {
+ 
+  flex-direction: column;
+}
+.main-container {
+  height: 100vh;
+  /* position: static; */
+}
+.card {
+  height: auto;
+}
+.switch-plan {
+  padding: 20px 0;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+}
+@media(max-width:1070px) {
+  .row {
+    flex-direction: column;
+  }
+  .card {
+    max-width: fit-content;
+  }
+}
